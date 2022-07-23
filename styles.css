@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.first {
+  position: absolute;
+  padding-left: 20px;
+  font-size: 25px;
+  box-shadow: 0 10px 10px red;
+}
+
+#app {
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 1rem;
+  box-shadow: 0 0px 100px rgba(218, 27, 27, 0.26);
+}
+
+.item {
+  padding-left: 280px;
+  font-size: 25px;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #d15710 0, #c7a01f 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 70px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.button:focus {
+  box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #a8370a 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.buttonTwo {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #d15710 0, #c7a01f 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 70px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.buttonTwo:focus {
+  box-shadow: #ec3d08 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ff6308 0 -3px 0 inset;
+}
+
+.buttonTwo:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f17909 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.buttonTwo:active {
+  box-shadow: #a8370a 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+label, input {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0px 100px rgba(20, 18, 156, 0.26);
+}
+
+li:nth-child(11) ~ li {
+  display: none;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  margin-top: 35px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 10s infinite ease-in-out;
+  animation: sk-stretchdelay 0.9s infinite ease-in-out;
+}
+
+.rect2 {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 5%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(4.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 10%, 100% { 
+    transform: scaleY(10);
+    -webkit-transform: scaleY(0.9);
+  }  20% { 
+    transform: scaleY(100);
+    -webkit-transform: scaleY(3.0);
+  }
+}
+
